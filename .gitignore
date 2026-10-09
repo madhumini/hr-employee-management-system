@@ -1,0 +1,26 @@
+Node / Angular
+
+**/node_modules/
+**/dist/
+**/.angular/
+
+.NET build files
+
+**/bin/
+**/obj/
+
+Environment and secrets
+
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+
+IDE files
+
+.vs/
+.vscode/
+
+Logs
+
+*.log
