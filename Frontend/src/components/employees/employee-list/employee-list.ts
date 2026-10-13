@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject,signal  } from '@angular/core';
 import {
   FormBuilder,
   ReactiveFormsModule,
@@ -22,8 +22,9 @@ export class EmployeeList  implements OnInit {
   private readonly fb = inject(FormBuilder);
   private readonly employeeService = inject(EmployeeService);
 
+  employees = signal<Employee[]>([]);
   // employees: Employee[] = [];
-  employees$: Observable<Employee[]> = of([]);
+  // employees$: Observable<Employee[]> = of([]);
   editingId: number | null = null;
   showForm = false;
   loading = false;
@@ -88,6 +89,21 @@ export class EmployeeList  implements OnInit {
 //   }
 // }
 
+  loadEmployees(): void {
+    this.loading = true;
+
+    this.employeeService.getAll(this.searchText).subscribe({
+      next: data => {
+        this.employees.set(data);
+        this.loading = false;
+      },
+      error: error => {
+        this.loading = false;
+        this.showError(error, 'Unable to load employees.');
+      }
+    });
+  }
+
   // loadEmployees(): void {
   //   this.loading = true;
 
@@ -102,9 +118,25 @@ export class EmployeeList  implements OnInit {
   //     }
   //   });
   // }
-  loadEmployees(): void {
-  this.employees$ = this.employeeService.getAll(this.searchText);
-}
+
+//   loadEmployees(): void {
+//     this.loading = true;
+//   this.employees$ = this.employeeService.getAll(this.searchText);
+//   this.loading = false;
+// }
+//  async loadEmployees() {
+//  await this.employeeService.getAll(this.searchText).subscribe({
+//       next: data => {
+//         this.loading = false;
+//         if (data != null){
+//         this.employees = data;}
+//       },
+//       error: error => {
+//         this.loading = false;
+//         this.showError(error, 'Unable to load employees.');
+//       }
+//     });
+// }
 
   onSearch(value: string): void {
     this.searchText = value;

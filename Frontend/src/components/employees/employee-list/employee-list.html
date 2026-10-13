@@ -165,7 +165,8 @@
           </thead>
 
           <tbody>
-            <tr *ngFor="let employee of (employees$ | async) ?? []">
+            @for (employee of employees(); track employee.employeeId) {
+            <tr>
               <td>{{ employee.employeeCode }}</td>
               <td>
                 {{ employee.firstName }} {{ employee.lastName }}
@@ -188,8 +189,8 @@
                 </div>
               </td>
             </tr>
-
-            <tr *ngIf="(employees$ | async)?.length === 0">
+          }
+            <tr *ngIf="employees().length === 0">
               <td colspan="7" class="text-center text-muted py-4">
                 No employees found.
               </td>
@@ -199,7 +200,7 @@
       </div>
 
       <div class="text-muted small">
-        {{ (employees$ | async)?.length }} employee record(s) displayed
+        {{ employees().length }} employee record(s) displayed
       </div>
     </div>
   </div>
