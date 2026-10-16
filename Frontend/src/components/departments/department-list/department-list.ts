@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import {
   FormBuilder,
   ReactiveFormsModule,
@@ -15,7 +15,7 @@ import {
 import { DepartmentService } from '../../../services/department.service';
 
 @Component({
-  imports: [],
+  imports: [CommonModule,ReactiveFormsModule],
   selector: 'app-department-list',
   styleUrl: './department-list.scss',
   templateUrl: './department-list.html',
@@ -25,7 +25,8 @@ export class DepartmentList  implements OnInit {
   private readonly departmentService =
     inject(DepartmentService);
 
-  departments: Department[] = [];
+    departments = signal<Department[]>([]);
+  // departments: Department[] = [];
 
   editingId: number | null = null;
   showForm = false;
@@ -64,7 +65,8 @@ export class DepartmentList  implements OnInit {
       .getAll(this.searchText)
       .subscribe({
         next: data => {
-          this.departments = data;
+          this.departments.set(data);
+          // this.departments = data;
           this.loading = false;
         },
         error: error => {

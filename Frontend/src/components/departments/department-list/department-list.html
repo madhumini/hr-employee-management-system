@@ -161,8 +161,8 @@
           </thead>
 
           <tbody>
-
-            <tr *ngFor="let department of departments">
+@for (department of departments(); track department.departmentId) {
+            <tr>
 
               <td>{{ department.departmentCode }}</td>
 
@@ -204,8 +204,8 @@
               </td>
 
             </tr>
-
-            <tr *ngIf="departments.length === 0">
+          }
+            <tr *ngIf="departments().length === 0">
               <td
                 colspan="5"
                 class="text-center text-muted py-4">
@@ -219,7 +219,7 @@
       </div>
 
       <div class="text-muted small">
-        {{ departments.length }} department(s) displayed
+        {{ departments().length }} department(s) displayed
       </div>
 
     </div>

@@ -15,7 +15,7 @@ export class DepartmentService {
 
   // Use the same actual HTTPS port as your .NET API.
   private readonly apiUrl =
-    'https://localhost:7244/api/departments';
+    'https://localhost:7018/api/departments';
 
   getAll(search = ''): Observable<Department[]> {
     let params = new HttpParams();
