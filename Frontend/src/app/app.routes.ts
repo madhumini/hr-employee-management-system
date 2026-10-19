@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { EmployeeList } from '../components/employees/employee-list/employee-list';
 import { DepartmentList } from '../components/departments/department-list/department-list';
+import { OrganizationList } from '../components/organizations/organization-list/organization-list';
 
 export const routes: Routes = [
   {
@@ -19,5 +20,9 @@ export const routes: Routes = [
   {
     path: '**',
     redirectTo: 'employees'
+  },
+    {
+    path: 'organizations',
+    component: OrganizationList
   }
 ];
