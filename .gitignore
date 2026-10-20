@@ -1,26 +1,52 @@
-Node / Angular
 
+# Node / Angular
 **/node_modules/
 **/dist/
 **/.angular/
+coverage/
 
-.NET build files
-
+# .NET build files
 **/bin/
 **/obj/
+.vs/
 
-Environment and secrets
-
+# Environment and secrets
 .env
 .env.*
 !.env.example
 appsettings.Development.json
 
-IDE files
-
-.vs/
+# IDE files
 .vscode/
 
-Logs
-
+# Logs and temporary files
 *.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Visual Studio user-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Test results
+TestResults/
+**/TestResults/
+
+# Publish output
+publish/
+**/publish/
+
+# Local databases and backups
+*.mdf
+*.ldf
+*.bak
+
+# Copilot / AI-generated local index or cache (if present)
+.github/copilot/index/
+.copilot/
