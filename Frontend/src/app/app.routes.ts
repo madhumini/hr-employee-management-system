@@ -18,11 +18,11 @@ export const routes: Routes = [
     component: DepartmentList
   },
   {
-    path: '**',
-    redirectTo: 'employees'
-  },
-    {
     path: 'organizations',
     component: OrganizationList
+  },
+  {
+    path: '**',
+    redirectTo: 'employees'
   }
 ];

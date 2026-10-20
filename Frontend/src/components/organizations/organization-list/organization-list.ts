@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, inject, signal } from '@angular/core';
 import {
   FormBuilder,
   FormsModule,
@@ -21,15 +21,16 @@ import { OrganizationService } from '../../../services/organization.service';
   styleUrl: './organization-list.scss',
   templateUrl: './organization-list.html',
 })
-export class OrganizationList  implements OnInit {
+export class OrganizationList implements OnInit {
   private readonly fb = inject(FormBuilder);
   private readonly organizationService = inject(OrganizationService);
+  organizations = signal<Organization[]>([]);
 
-  organizations: Organization[] = [];
+  // organizations: Organization[] = [];
 
   editingId: number | null = null;
   showForm = false;
-  loading = false;
+  loading = signal(false);
   searchText = '';
 
   organizationForm = this.fb.nonNullable.group({
@@ -55,15 +56,16 @@ export class OrganizationList  implements OnInit {
   }
 
   loadOrganizations(): void {
-    this.loading = true;
+    this.loading.set(true);
 
     this.organizationService.getAll(this.searchText).subscribe({
-      next: (data) => {
-        this.organizations = data;
-        this.loading = false;
+      next: data => {
+        this.organizations.set(data);
+        // this.organizations = data;
+        this.loading.set(false);
       },
-      error: (error: HttpErrorResponse) => {
-        this.loading = false;
+      error: error => {
+        this.loading.set(false);
         this.showError(error);
       }
     });

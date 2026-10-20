@@ -8,11 +8,11 @@
 }
 
 .card-header {
-  padding: 1rem 1.25rem;
+  padding: 16px 20px;
 }
 
 .form-label {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .table th {
@@ -21,4 +21,8 @@
 
 .table td {
   vertical-align: middle;
+}
+
+textarea {
+  resize: vertical;
 }

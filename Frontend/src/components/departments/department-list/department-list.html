@@ -8,10 +8,7 @@
       </p>
     </div>
 
-    <button
-      type="button"
-      class="btn btn-primary"
-      (click)="openCreateForm()">
+    <button type="button" class="btn btn-primary" (click)="openCreateForm()">
       + Add Department
     </button>
   </div>
@@ -22,16 +19,14 @@
     <div class="card-header bg-white">
       <h5 class="mb-0">
         {{ editingId === null
-            ? 'Add Department'
-            : 'Edit Department' }}
+        ? 'Add Department'
+        : 'Edit Department' }}
       </h5>
     </div>
 
     <div class="card-body">
 
-      <form
-        [formGroup]="departmentForm"
-        (ngSubmit)="saveDepartment()">
+      <form [formGroup]="departmentForm" (ngSubmit)="saveDepartment()">
 
         <div class="row g-3">
 
@@ -40,14 +35,9 @@
               Department Code *
             </label>
 
-            <input
-              type="text"
-              class="form-control"
-              formControlName="departmentCode">
+            <input type="text" class="form-control" formControlName="departmentCode">
 
-            <small
-              class="text-danger"
-              *ngIf="
+            <small class="text-danger" *ngIf="
                 departmentForm.controls.departmentCode.touched &&
                 departmentForm.controls.departmentCode.invalid">
               Department code is required and must not exceed
@@ -60,14 +50,9 @@
               Department Name *
             </label>
 
-            <input
-              type="text"
-              class="form-control"
-              formControlName="departmentName">
+            <input type="text" class="form-control" formControlName="departmentName">
 
-            <small
-              class="text-danger"
-              *ngIf="
+            <small class="text-danger" *ngIf="
                 departmentForm.controls.departmentName.touched &&
                 departmentForm.controls.departmentName.invalid">
               Department name is required and must not exceed
@@ -80,16 +65,11 @@
               Description
             </label>
 
-            <textarea
-              class="form-control"
-              rows="3"
-              formControlName="description"
+            <textarea class="form-control" rows="3" formControlName="description"
               placeholder="Enter department description">
             </textarea>
 
-            <small
-              class="text-danger"
-              *ngIf="
+            <small class="text-danger" *ngIf="
                 departmentForm.controls.description.touched &&
                 departmentForm.controls.description.invalid">
               Description cannot exceed 500 characters.
@@ -100,17 +80,11 @@
 
         <div class="mt-4 d-flex gap-2">
 
-          <button
-            type="submit"
-            class="btn btn-primary"
-            [disabled]="loading">
+          <button type="submit" class="btn btn-primary" [disabled]="loading">
             {{ loading ? 'Saving...' : 'Save Department' }}
           </button>
 
-          <button
-            type="button"
-            class="btn btn-outline-secondary"
-            (click)="cancelForm()">
+          <button type="button" class="btn btn-outline-secondary" (click)="cancelForm()">
             Cancel
           </button>
 
@@ -127,21 +101,14 @@
       <div class="row mb-3">
         <div class="col-md-6">
 
-          <input
-            #searchBox
-            type="search"
-            class="form-control"
-            placeholder="Search code, department or description..."
-            [value]="searchText"
-            (input)="onSearch(searchBox.value)">
+          <input #searchBox type="search" class="form-control" placeholder="Search code, department or description..."
+            [value]="searchText" (input)="onSearch(searchBox.value)">
 
         </div>
       </div>
 
       <div *ngIf="loading" class="text-center py-4">
-        <div
-          class="spinner-border text-primary"
-          role="status">
+        <div class="spinner-border text-primary" role="status">
           <span class="visually-hidden">Loading...</span>
         </div>
       </div>
@@ -161,7 +128,7 @@
           </thead>
 
           <tbody>
-@for (department of departments(); track department.departmentId) {
+            @for (department of departments(); track department.departmentId) {
             <tr>
 
               <td>{{ department.departmentCode }}</td>
@@ -173,9 +140,7 @@
               </td>
 
               <td>
-                <span
-                  class="badge"
-                  [ngClass]="department.isActive
+                <span class="badge" [ngClass]="department.isActive
                     ? 'text-bg-success'
                     : 'text-bg-secondary'">
                   {{ department.isActive ? 'Active' : 'Inactive' }}
@@ -185,17 +150,11 @@
               <td>
                 <div class="d-flex gap-2">
 
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-primary"
-                    (click)="openEditForm(department)">
+                  <button type="button" class="btn btn-sm btn-outline-primary" (click)="openEditForm(department)">
                     Edit
                   </button>
 
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-danger"
-                    [disabled]="!department.isActive"
+                  <button type="button" class="btn btn-sm btn-outline-danger" [disabled]="!department.isActive"
                     (click)="deactivateDepartment(department)">
                     Deactivate
                   </button>
@@ -204,11 +163,9 @@
               </td>
 
             </tr>
-          }
+            }
             <tr *ngIf="departments().length === 0">
-              <td
-                colspan="5"
-                class="text-center text-muted py-4">
+              <td colspan="5" class="text-center text-muted py-4">
                 No departments found.
               </td>
             </tr>
