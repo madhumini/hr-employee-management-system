@@ -7,6 +7,26 @@
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\controllers\\organizationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\organizationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\data\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:data\\iorganizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\data\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:data\\organizationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\dto\\organizationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:dto\\organizationdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\models\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:models\\organization.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\departmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,66 +83,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DepartmentsController.cs",
-              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\DepartmentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\DepartmentsController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAALAAAAAAAAAA==",
+              "Title": "OrganizationsController.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\OrganizationsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OrganizationsController.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\OrganizationsController.cs*",
+              "RelativeToolTip": "Controllers\\OrganizationsController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T06:06:08.345Z",
+              "WhenOpened": "2026-10-20T05:29:01.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "Data\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\DepartmentRepository.cs",
-              "RelativeToolTip": "Data\\DepartmentRepository.cs",
+              "Title": "OrganizationRepository.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\OrganizationRepository.cs",
+              "RelativeDocumentMoniker": "Data\\OrganizationRepository.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\OrganizationRepository.cs*",
+              "RelativeToolTip": "Data\\OrganizationRepository.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T06:04:35.069Z",
+              "WhenOpened": "2026-10-20T05:27:59.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "IDepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IDepartmentRepository.cs",
-              "RelativeDocumentMoniker": "Data\\IDepartmentRepository.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IDepartmentRepository.cs",
-              "RelativeToolTip": "Data\\IDepartmentRepository.cs",
+              "Title": "IOrganizationRepository.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IOrganizationRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IOrganizationRepository.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IOrganizationRepository.cs*",
+              "RelativeToolTip": "Data\\IOrganizationRepository.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T06:03:14.839Z",
+              "WhenOpened": "2026-10-20T05:27:08.105Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DepartmentDtos.cs",
-              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\DepartmentDtos.cs",
-              "RelativeDocumentMoniker": "DTO\\DepartmentDtos.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\DepartmentDtos.cs",
-              "RelativeToolTip": "DTO\\DepartmentDtos.cs",
+              "Title": "OrganizationDtos.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\OrganizationDtos.cs",
+              "RelativeDocumentMoniker": "DTO\\OrganizationDtos.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\OrganizationDtos.cs*",
+              "RelativeToolTip": "DTO\\OrganizationDtos.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T06:01:49.034Z",
+              "WhenOpened": "2026-10-20T05:26:10.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Department.cs",
-              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Department.cs",
-              "RelativeDocumentMoniker": "Models\\Department.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Department.cs",
-              "RelativeToolTip": "Models\\Department.cs",
+              "DocumentIndex": 5,
+              "Title": "Organization.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Organization.cs",
+              "RelativeDocumentMoniker": "Models\\Organization.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Organization.cs*",
+              "RelativeToolTip": "Models\\Organization.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-16T06:00:51.977Z",
+              "WhenOpened": "2026-10-20T05:25:17.018Z",
               "EditorCaption": ""
             },
             {
@@ -131,16 +151,76 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T06:19:26.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DepartmentsController.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\DepartmentsController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:06:08.345Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\DepartmentRepository.cs",
+              "RelativeToolTip": "Data\\DepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:04:35.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Data\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Data\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:03:14.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DepartmentDtos.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\DepartmentDtos.cs",
+              "RelativeDocumentMoniker": "DTO\\DepartmentDtos.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\DepartmentDtos.cs",
+              "RelativeToolTip": "DTO\\DepartmentDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:01:49.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Models\\Department.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Department.cs",
+              "RelativeToolTip": "Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-16T06:00:51.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
@@ -148,12 +228,11 @@
               "RelativeToolTip": "Controllers\\EmployeesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T06:18:09.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-12T06:18:09.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Data\\EmployeeRepository.cs",
@@ -165,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Data\\IEmployeeRepository.cs",
@@ -177,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "EmployeeDtos.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\EmployeeDtos.cs",
               "RelativeDocumentMoniker": "DTO\\EmployeeDtos.cs",
@@ -185,12 +264,11 @@
               "RelativeToolTip": "DTO\\EmployeeDtos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T06:13:47.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-12T06:13:47.224Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
@@ -198,12 +276,11 @@
               "RelativeToolTip": "Models\\Employee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T06:10:06.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-12T06:10:06.24Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
