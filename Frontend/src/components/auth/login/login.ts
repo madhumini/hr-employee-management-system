@@ -12,7 +12,7 @@ import Swal from 'sweetalert2';
 import { AuthService } from '../../../services/auth.service';
 
 @Component({
-  imports: [],
+  imports: [CommonModule,ReactiveFormsModule],
   selector: 'app-login',
   styleUrl: './login.scss',
   templateUrl: './login.html',

@@ -1,9 +1,13 @@
 
 <div class="app-shell">
-	<app-navbar />
+	@if (showNavigation()) {
+		<app-navbar />
+	}
 
 	<div class="app-body">
-		<app-sidebar />
+		@if (showNavigation()) {
+			<app-sidebar />
+		}
 
 		<main class="page-content">
 			<router-outlet />

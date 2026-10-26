@@ -23,7 +23,7 @@ export class AuthService {
   private readonly http = inject(HttpClient);
 
   private readonly apiUrl =
-    'https://localhost:7244/api/auth';
+    'https://localhost:7018/api/auth';
 
   private readonly tokenKey = 'hr_auth_token';
   private readonly userKey = 'hr_auth_user';
