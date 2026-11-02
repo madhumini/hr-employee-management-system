@@ -8,7 +8,7 @@ import {
   LeaveRequest,
   LeaveRequestCreate,
   LeaveReview
-} from './leave.model';
+} from '../models/leave.model';
 
 @Injectable({
   providedIn: 'root'

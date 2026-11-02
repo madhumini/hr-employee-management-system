@@ -4,6 +4,7 @@ import { DepartmentList } from '../components/departments/department-list/depart
 import { OrganizationList } from '../components/organizations/organization-list/organization-list';
 import { Login } from '../components/auth/login/login';
 import { authGuard } from '../components/auth/auth.guard';
+import { LeaveManagement } from '../components/leave/leave-management/leave-management';
 
 export const routes: Routes = [
     {
@@ -28,6 +29,12 @@ export const routes: Routes = [
     canActivate: [authGuard],
     data: { roles: ['HR'] }
   },
+  {
+  path: 'leave',
+  component: LeaveManagement,
+  canActivate: [authGuard],
+  data: { roles: ['Employee', 'HR'] }
+}
   // {
   //   path: 'my-profile',
   //   canActivate: [authGuard],

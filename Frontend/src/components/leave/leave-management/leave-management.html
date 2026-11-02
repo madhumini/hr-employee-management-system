@@ -1,1 +1,261 @@
-<p>leave-management works!</p>
+<div class="container-fluid py-4">
+  <h2 class="mb-4">Leave Management</h2>
+
+  @if (isHR) {
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-white">
+        <h5 class="mb-0">Leave Requests for Review</h5>
+      </div>
+
+      <div class="card-body">
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <label class="form-label">Filter by status</label>
+            <select
+              class="form-select"
+              [(ngModel)]="statusFilter"
+              (change)="loadAllRequests()"
+            >
+              <option value="">All requests</option>
+              <option value="Pending">Pending</option>
+              <option value="Approved">Approved</option>
+              <option value="Rejected">Rejected</option>
+              <option value="Cancelled">Cancelled</option>
+            </select>
+          </div>
+        </div>
+
+        @if (loading) {
+          <p>Loading leave requests...</p>
+        } @else {
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+              <thead class="table-light">
+                <tr>
+                  <th>Employee</th>
+                  <th>Leave Type</th>
+                  <th>Start</th>
+                  <th>End</th>
+                  <th>Days</th>
+                  <th>Reason</th>
+                  <th>Status</th>
+                  <th>Review</th>
+                </tr>
+              </thead>
+              <tbody>
+                @for (request of allRequests; track request.leaveRequestId) {
+                  <tr>
+                    <td>
+                      {{ request.employeeCode }} -
+                      {{ request.firstName }} {{ request.lastName }}
+                    </td>
+                    <td>{{ request.leaveTypeName }}</td>
+                    <td>{{ request.startDate | date:'yyyy-MM-dd' }}</td>
+                    <td>{{ request.endDate | date:'yyyy-MM-dd' }}</td>
+                    <td>{{ request.totalDays }}</td>
+                    <td>{{ request.reason }}</td>
+                    <td>
+                      <span class="badge bg-secondary">
+                        {{ request.status }}
+                      </span>
+                    </td>
+                    <td>
+                      @if (request.status === 'Pending') {
+                        <div class="d-flex gap-1">
+                          <button
+                            class="btn btn-sm btn-success"
+                            type="button"
+                            (click)="review(request, 'Approved')"
+                          >
+                            Approve
+                          </button>
+                          <button
+                            class="btn btn-sm btn-danger"
+                            type="button"
+                            (click)="review(request, 'Rejected')"
+                          >
+                            Reject
+                          </button>
+                        </div>
+                      } @else {
+                        {{ request.reviewComment || '-' }}
+                      }
+                    </td>
+                  </tr>
+                } @empty {
+                  <tr>
+                    <td colspan="8" class="text-center">
+                      No leave requests found.
+                    </td>
+                  </tr>
+                }
+              </tbody>
+            </table>
+          </div>
+        }
+      </div>
+    </div>
+  } @else {
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-white">
+        <h5 class="mb-0">My Leave Balances</h5>
+      </div>
+
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Leave Type</th>
+                <th>Allocated</th>
+                <th>Used</th>
+                <th>Remaining</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (balance of balances; track balance.leaveBalanceId) {
+                <tr>
+                  <td>{{ balance.leaveTypeName }}</td>
+                  <td>{{ balance.allocatedDays }}</td>
+                  <td>{{ balance.usedDays }}</td>
+                  <td>{{ balance.remainingDays }}</td>
+                </tr>
+              } @empty {
+                <tr>
+                  <td colspan="4" class="text-center">
+                    No leave balances found for this year.
+                    Contact HR to initialize your balance.
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm mb-4">
+      <div class="card-header bg-white">
+        <h5 class="mb-0">Apply for Leave</h5>
+      </div>
+
+      <div class="card-body">
+        <form [formGroup]="leaveForm" (ngSubmit)="submitLeave()">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Leave Type *</label>
+              <select class="form-select" formControlName="leaveTypeId">
+                <option [ngValue]="0">Select leave type</option>
+                @for (type of leaveTypes; track type.leaveTypeId) {
+                  <option [ngValue]="type.leaveTypeId">
+                    {{ type.leaveTypeName }}
+                  </option>
+                }
+              </select>
+
+              @if (
+                leaveForm.controls.leaveTypeId.touched &&
+                leaveForm.controls.leaveTypeId.invalid
+              ) {
+                <small class="text-danger">Select a leave type.</small>
+              }
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Start Date *</label>
+              <input
+                class="form-control"
+                type="date"
+                formControlName="startDate"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">End Date *</label>
+              <input
+                class="form-control"
+                type="date"
+                formControlName="endDate"
+                [min]="leaveForm.controls.startDate.value"
+              />
+            </div>
+
+            <div class="col-md-6">
+              <label class="form-label">Reason *</label>
+              <textarea
+                class="form-control"
+                formControlName="reason"
+                rows="2"
+                maxlength="500"
+              ></textarea>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary mt-3"
+            type="submit"
+            [disabled]="leaveForm.invalid || submitting"
+          >
+            {{ submitting ? 'Submitting...' : 'Submit Leave Request' }}
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="card-header bg-white">
+        <h5 class="mb-0">My Leave History</h5>
+      </div>
+
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Leave Type</th>
+                <th>Start Date</th>
+                <th>End Date</th>
+                <th>Days</th>
+                <th>Status</th>
+                <th>HR Comment</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              @for (request of myRequests; track request.leaveRequestId) {
+                <tr>
+                  <td>{{ request.leaveTypeName }}</td>
+                  <td>{{ request.startDate | date:'yyyy-MM-dd' }}</td>
+                  <td>{{ request.endDate | date:'yyyy-MM-dd' }}</td>
+                  <td>{{ request.totalDays }}</td>
+                  <td>{{ request.status }}</td>
+                  <td>{{ request.reviewComment || '-' }}</td>
+                  <td>
+                    @if (request.status === 'Pending') {
+                      <button
+                        class="btn btn-sm btn-outline-danger"
+                        type="button"
+                        (click)="cancelRequest(request)"
+                      >
+                        Cancel
+                      </button>
+                    } @else {
+                      -
+                    }
+                  </td>
+                </tr>
+              } @empty {
+                <tr>
+                  <td colspan="7" class="text-center">
+                    You have not submitted any leave requests.
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  }
+</div>
