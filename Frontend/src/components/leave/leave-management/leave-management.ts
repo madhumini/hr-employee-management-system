@@ -7,7 +7,7 @@ import {
   Validators
 } from '@angular/forms';
 import Swal from 'sweetalert2';
-
+import { FormsModule } from '@angular/forms';
 import { AuthService } from '../../../services/auth.service';
 import { LeaveService } from '../../../services/leave.service';
 import {
@@ -19,7 +19,7 @@ import {
 @Component({
   selector: 'app-leave-management',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, FormsModule, ReactiveFormsModule],
   templateUrl: './leave-management.html',
   styleUrl: './leave-management.css'
 })
