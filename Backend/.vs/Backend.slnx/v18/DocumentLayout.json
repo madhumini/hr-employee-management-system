@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:controllers\\leavecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|c:\\git hub projects\\hr \u0026 employee management system\\backend\\data\\leaverepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5ADA2BB6-BD8A-FBBA-631C-E748BB1D8E69}|Backend.csproj|solutionrelative:data\\leaverepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -123,6 +127,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LeaveController.cs",
+              "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\LeaveController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LeaveController.cs",
+              "ToolTip": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\LeaveController.cs",
+              "RelativeToolTip": "Controllers\\LeaveController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAmwAEAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-27T05:05:13.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "LeaveRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\LeaveRepository.cs",
               "RelativeDocumentMoniker": "Data\\LeaveRepository.cs",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ILeaveRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\ILeaveRepository.cs",
               "RelativeDocumentMoniker": "Data\\ILeaveRepository.cs",
@@ -143,12 +160,11 @@
               "RelativeToolTip": "Data\\ILeaveRepository.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-23T06:57:51.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-23T06:57:51.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LeaveDtos.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\LeaveDtos.cs",
               "RelativeDocumentMoniker": "DTO\\LeaveDtos.cs",
@@ -160,7 +176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -172,7 +188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Backend.csproj",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend.csproj",
@@ -184,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IAuthRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IAuthRepository.cs",
               "RelativeDocumentMoniker": "Data\\IAuthRepository.cs",
@@ -196,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AuthRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\AuthRepository.cs",
               "RelativeDocumentMoniker": "Data\\AuthRepository.cs",
@@ -208,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\LoginRequest.cs",
               "RelativeDocumentMoniker": "DTO\\LoginRequest.cs",
@@ -220,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EmployeeDtos.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\EmployeeDtos.cs",
               "RelativeDocumentMoniker": "DTO\\EmployeeDtos.cs",
@@ -232,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -244,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -256,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "AuthUser.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\AuthUser.cs",
               "RelativeDocumentMoniker": "Models\\AuthUser.cs",
@@ -268,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Models\\LoginResponse.cs",
@@ -280,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "OrganizationsController.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\OrganizationsController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrganizationsController.cs",
@@ -292,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "OrganizationRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\OrganizationRepository.cs",
               "RelativeDocumentMoniker": "Data\\OrganizationRepository.cs",
@@ -304,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "IOrganizationRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IOrganizationRepository.cs",
               "RelativeDocumentMoniker": "Data\\IOrganizationRepository.cs",
@@ -316,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "OrganizationDtos.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\OrganizationDtos.cs",
               "RelativeDocumentMoniker": "DTO\\OrganizationDtos.cs",
@@ -328,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Organization.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Organization.cs",
               "RelativeDocumentMoniker": "Models\\Organization.cs",
@@ -340,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "DepartmentsController.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\DepartmentsController.cs",
               "RelativeDocumentMoniker": "Controllers\\DepartmentsController.cs",
@@ -352,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DepartmentRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\DepartmentRepository.cs",
               "RelativeDocumentMoniker": "Data\\DepartmentRepository.cs",
@@ -364,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "IDepartmentRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IDepartmentRepository.cs",
               "RelativeDocumentMoniker": "Data\\IDepartmentRepository.cs",
@@ -376,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DepartmentDtos.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\DTO\\DepartmentDtos.cs",
               "RelativeDocumentMoniker": "DTO\\DepartmentDtos.cs",
@@ -388,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Department.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Department.cs",
               "RelativeDocumentMoniker": "Models\\Department.cs",
@@ -400,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "EmployeesController.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Controllers\\EmployeesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
@@ -412,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Data\\EmployeeRepository.cs",
@@ -424,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Data\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Data\\IEmployeeRepository.cs",
@@ -436,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Employee.cs",
               "DocumentMoniker": "C:\\Git hub Projects\\HR \u0026 Employee Management System\\Backend\\Models\\Employee.cs",
               "RelativeDocumentMoniker": "Models\\Employee.cs",
